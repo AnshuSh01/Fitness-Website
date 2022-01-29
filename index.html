@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anshu Gym</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        margin: 0px;
+        padding: 0px;
+        background: url("https://wallpaperaccess.com/full/1244688.jpg");
+        background-repeat: no-repeat;
+        color: white;
+        background-size: 100%;
+
+        font-family: "Baloo Bhai 2", cursive;
+        height: 100%;
+        background-color: rgb(219, 206, 206);
+      }
+      .left {
+        display: inline-block;
+        position: absolute;
+        left: 34px;
+        top: 20px;
+      }
+
+      .mid {
+        display: block;
+        width: 45%;
+        margin: 20px auto;
+        margin-top: 20px;
+      }
+      .right {
+        position: absolute;
+        right: 34px;
+        top: 35px;
+
+        display: inline-block;
+      }
+      .right a{
+        text-decoration: none;
+      }
+      .navbar {
+        display: inline-block;
+      }
+      
+      .navbar li {
+        display: inline-block;
+        float:left;
+        font-size: 23px;
+      }
+      .navbar li a {
+        text-decoration: none;
+        margin: 3px;
+        color: white;
+        padding: 34px 5px;
+      }
+      .navbar li a:hover {
+        text-decoration: none;
+        color: grey;
+      }
+      
+      .left img {
+        width: 100px;
+        filter: invert(100%);
+      }
+      .left div {
+        text-align: center;
+        line-height: 0px;
+        font-family: "Baloo Bhai 2", cursive;
+      }
+      .btn {
+        margin: -7px 4px;
+        color: white;
+        background-color: black;
+        padding: 4px 14px;
+        border-radius: 5px;
+        border-color: 2px solid black;
+        cursor: pointer;
+        font-size: 15px;
+        font-family: "Baloo Bhai 2", cursive;
+      }
+      .btn:hover {
+        background-color: rgb(58, 56, 56);
+      }
+      .container {
+        margin-top: 50px;
+        padding: 7px 43px;
+        width: 35%;
+        border-radius: 10px;
+      }
+      .container h2 {
+        text-align: center;
+        font-family: "Baloo Bhai 2", cursive;
+      }
+
+      .formclass input {
+        font-family: "Baloo Bhai 2", cursive;
+
+        text-align: center;
+        display: block;
+        width: 300px;
+        padding: 6px;
+        border-radius: 4px;
+        margin: 3px auto;
+      }
+      .container button {
+        display: block;
+        margin: 15px auto;
+        text-align: center;
+        width: 313px;
+      }
+      .header {
+        position: sticky;
+        top: 2px;
+      }
+      .More {
+        
+
+        border-radius: 3px;
+        text-align: center;
+
+        margin-top: 290px;
+      }
+      .More h2{
+       
+
+        border-radius: 3px;
+        text-align: center;
+
+        margin-top: 220px;
+
+      }
+      .equipment {
+        margin-top: 4px;
+         
+        width: 400px;
+        border-radius: 7px;
+        float: left;
+        margin-left: 3px;
+
+        text-align: center;
+        
+      }
+      .equipment a {
+        text-decoration: none;
+        font-family: "Baloo Bhai 2", cursive;
+        font-size: 20px;
+      }
+      .equipment a:hover {
+        color: red;
+        text-decoration: underline;
+        transform: rotate(360deg);
+        transform: skewY(20deg);
+        transform: scale(1.2) rotate(360deg);
+        
+      }
+      .equipment:hover img{
+        transform: scale(1.2) rotate(360deg);
+        border-radius: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <!-- for logo -->
+      <div class="left">
+        <img
+          src="https://s.tmimgcdn.com/scr/800x500/119200/gym-logo-template_119261-original.jpg"
+          alt=""
+        />
+        <div class="div">Anshu Fitness</div>
+      </div>
+      <!-- for navigation bar -->
+      <div class="mid">
+        <ul class="navbar">
+          <li>
+            <a href="#" class="active"  >Home</a>
+          </li>
+          <li>
+            <a href="#"   target="_blank"
+              >about us</a
+            >
+          </li>
+          <li>
+            <a href= "#"   target="_blank"
+              >Fitness Guideance</a>
+            
+          </li>
+          <li>
+            <a href"#"  target="_blank"
+              >Contact us</a
+            >
+          </li>
+        </ul>
+      </div>
+      <!-- for search -->
+      <div class="right">
+        <button class="btn">
+          <a href="tel:9069628494">Call Me</a>
+        </button><button class="btn" >
+          <a href="mailto:anshush0609@gmail.com "> E-mail Me </a>
+        </button>
+      </div>
+    </header>
+    <div class="container">
+      <h2>Join the Best Gym of NCR</h2>
+      <form action="noaction.php">
+        <div class="formclass">
+          <input type="text" placeholder="Enter your name" />
+        </div>
+        <div class="formclass">
+          <input type="text" placeholder="Enter your address" />
+        </div>
+        <div class="formclass">
+          <input type="text" placeholder="Enter your age" />
+        </div>
+        <div class="formclass">
+          <input type="text" placeholder="Enter your Email" />
+        </div>
+        <div class="formclass">
+          <input type="text" placeholder="Enter your Number" />
+        </div>
+        <button class="btn">Submit</button>
+      </form>
+    </div>
+    <div class="More">
+      <h2>People May also Search and Purchase</h2>
+      <h4>These Equipments are Linked With Amazon Directly</h4>
+    </div>
+    <div class="equipment">
+      <img
+        src="https://m.media-amazon.com/images/I/71lWwz02S+L._SL1500_.jpg"
+        alt=""
+        height="230px "
+        width="530px"
+        title="Click Here to Purchase"
+      />
+      <a
+        href="https://www.amazon.in/BodyFit-Lifting-Adjustable-Dumbbells-Exercise/dp/B077QR8JSD/ref=asc_df_B077QR8JSD/?tag=googleshopdes-21&linkCode=df0&hvadid=397009524370&hvpos=&hvnetw=g&hvrand=1189442835405354775&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9075215&hvtargid=pla-838586248729&psc=1&ext_vrnc=hi"
+        target="_blank"
+        >Click Here to Purchase</a
+      >
+    </div>
+    <div class="equipment">
+      <img
+        src="https://cdn.shopify.com/s/files/1/0477/1358/3267/products/Benchfinal_720x.jpg?v=1639229095"
+        alt=""
+        height="230px "
+        width="530px"
+      />
+      <a
+        href="https://www.theflexnest.com/products/the-flexbench?variant=40354285781155&currency=INR&utm_medium=product_sync&utm_source=google&utm_content=sag_organic&utm_campaign=sag_organic&utm_campaign=Smart-Shopping-PanIndia-Allproducts-Digidarts&utm_source=google&utm_medium=shopping&gclid=Cj0KCQiA6NOPBhCPARIsAHAy2zBUNW6HkMnKNAwqCryFycdrDpjU5XBYh4jna_urHBjom7euE0jMVxkaAigDEALw_wcB"
+        target="_blank"
+        >Click Here to Purchase</a
+      >
+    </div>
+    <div class="equipment">
+      <img
+        src="https://cdn.shopify.com/s/files/1/0477/1358/3267/products/40lb_image_720x.jpg?v=1613849508"
+        alt=""
+        height="230px "
+        width="530px"
+      />
+      <a
+        href="https://www.theflexnest.com/products/the-flexikettle?variant=37756558934179&currency=INR&utm_medium=product_sync&utm_source=google&utm_content=sag_organic&utm_campaign=sag_organic&utm_campaign=Smart-Shopping-PanIndia-Allproducts-Digidarts&utm_source=google&utm_medium=shopping&gclid=Cj0KCQiA6NOPBhCPARIsAHAy2zCHToIBdsgwWVeV_2LCGJIBYXeglEqmDcoEGw0ayTTOmAgs3dGBqgsaAjB8EALw_wcB"
+        target="_blank"
+        >Click Here to Purchase</a
+      >
+    </div>
+     
+  </body>
+</html>
