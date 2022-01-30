@@ -148,6 +148,13 @@
         text-align: center;
         
       }
+      .More h4{
+        color: indianred;
+        text-align: center;
+        font-family: "Baloo Bhai 2", cursive;
+        font-size: 30px;
+
+      }
       .equipment a {
         text-decoration: none;
         font-family: "Baloo Bhai 2", cursive;
@@ -162,9 +169,54 @@
         
       }
       .equipment:hover img{
-        transform: scale(1.2) rotate(360deg);
+        transform: scale(1) rotate(0deg);
         border-radius: 50%;
+        width: 520px;
       }
+      .container label{
+        display: block;
+        margin-left: 80px;
+        text-align: center;
+        font-size: 18px;
+      }
+      .container label option{
+        font-family: "Baloo Bhai 2", cursive;
+      }
+      .reset input{
+        text-align: center;
+        margin-left: 80px;
+        padding: 3px 15px;
+      }
+      .reset input:hover{
+        background-color: gray;
+
+      }
+      footer{
+         display: block;
+         margin-top:350px;
+         margin-left: 10px;
+         color:black;
+         line-height: 0px;
+         font-family: "Baloo Bhai 2", cursive;
+         font-size: 20px;
+         
+       
+      }
+      footer button{
+        display: block;
+        font-size: 15px;
+        font-family: "Baloo Bhai 2", cursive;
+        margin-left: 6px;
+        margin-top: 5px;
+      }
+      footer textarea{
+        margin-top: 20px;
+        margin-left: 5px;
+      }
+      footer button:hover{
+        background-color: gray;
+      }
+       
     </style>
   </head>
   <body>
@@ -227,7 +279,21 @@
         <div class="formclass">
           <input type="text" placeholder="Enter your Number" />
         </div>
+        <div>
+          <label for=" ">Join as:
+            <select name="MyGym" id="GYM">
+              <option value="">Trainer</option>
+              <option value=" ">Learner</option>
+              <option value=" ">Gymmer</option>
+              <option value=" ">Machinery</option>
+            </select>
+          </label>
+        </div>
         <button class="btn">Submit</button>
+        <div class="reset">
+          <input type="reset" name="" id="">
+         </div>
+       
       </form>
     </div>
     <div class="More">
@@ -240,7 +306,7 @@
         alt=""
         height="230px "
         width="530px"
-        title="Click Here to Purchase"
+         
       />
       <a
         href="https://www.amazon.in/BodyFit-Lifting-Adjustable-Dumbbells-Exercise/dp/B077QR8JSD/ref=asc_df_B077QR8JSD/?tag=googleshopdes-21&linkCode=df0&hvadid=397009524370&hvpos=&hvnetw=g&hvrand=1189442835405354775&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9075215&hvtargid=pla-838586248729&psc=1&ext_vrnc=hi"
@@ -274,6 +340,16 @@
         >Click Here to Purchase</a
       >
     </div>
+  </div>
+  <footer class="feedback">Give Feedback:
+    <div class="textarea">
+       
+      <textarea name="" id="" cols="80" rows="10"></textarea>
+      <div>
+        <button class="textarea">Submit</button>
+      </div>
+    </div> </footer>
+    
      
   </body>
 </html>
